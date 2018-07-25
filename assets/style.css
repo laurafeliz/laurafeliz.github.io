@@ -3,12 +3,18 @@ body {
   color: white;
   font-family: helvetica; sans-serif;
   font-size: 24 px;
+  margin: 2em;
+}
+
+img{
+  max-width: 100%;
 }
 
 nav{
   background-color: mistyrose;
   display: flex;
   flex-direction: row
+  font-family: helvetica; sans-serif;
 }
 
 nav a {
@@ -19,15 +25,83 @@ nav a.active {
   background: white;
 }
 
-.card{
-  overflow: auto;
+.nav:hover {
+
+}
+
+.center{
+  display:center
+}
+
+
+.cardgroup{
+  display:flex;
+  flex-direction: row;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .card{
-  background: rgba(255, 255, 255, 0.5);
-  padding: 1%;
-  margin: 1%;
-  float: left;
-  width: 46%;
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+  padding: 20px;
+  border: solid 10px white;
+  margin: 30px;
+  float:left;
+  width:46%;
+  flex-basis: 50%;
+  transition: box-shadow 1s, transform 1s;
+}
 
+.card:hover {
+  box-shadow:0 3px 0 6px rgba(0, 0, 0, 15);
+  transform: scale(1.05);
+
+}
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
 }
