@@ -18,3 +18,16 @@ nav a {
 nav a.active {
   background: white;
 }
+
+.card{
+  overflow: auto;
+}
+
+.card{
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1%;
+  margin: 1%;
+  float: left;
+  width: 46%;
+
+}
