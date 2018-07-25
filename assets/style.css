@@ -1,3 +1,20 @@
 body {
-  background: tomato;
+  background: rosybrown;
+  color: white;
+  font-family: helvetica; sans-serif;
+  font-size: 24 px;
+}
+
+nav{
+  background-color: mistyrose;
+  display: flex;
+  flex-direction: row
+}
+
+nav a {
+  padding: 20px;
+}
+
+nav a.active {
+  background: white;
 }
